@@ -28,17 +28,21 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '2rem',
   },
   colorText: {
-    color: '#5AFF3D',
+    color: '#034f84',
+  },
+  colorText1: {
+    color: '#80ced6',
+    fontSize: '3rem'
   },
   container: {
     textAlign: 'center',
   },
   title: {
     color: '#fff',
-    fontSize: '4.5rem',
+    fontSize: '4rem',
   },
   goDown: {
-    color: '#5AFF3D',
+    color: '#80ced6',
     fontSize: '4rem',
   },
 }));
@@ -53,7 +57,7 @@ export default function Header() {
       <AppBar className={classes.appbar} elevation={0}>
         <Toolbar className={classes.appbarWrapper}>
           <h1 className={classes.appbarTitle}>
-            My<span className={classes.colorText}>Island.</span>
+          <span className={classes.colorText}>BUSINESS </span>PROFESSIONALS ACADEMY.
           </h1>
           <IconButton>
             <SortIcon className={classes.icon} />
@@ -69,7 +73,7 @@ export default function Header() {
         <div className={classes.container}>
           <h1 className={classes.title}>
             Welcome to <br />
-            My<span className={classes.colorText}>Island.</span>
+            <span className={classes.colorText1}>BUSINESS PROFESSIONALS ACADEMY </span>
           </h1>
           <Scroll to="place-to-visit" smooth={true}>
             <IconButton>

@@ -12,6 +12,15 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
     },
+    direct:{
+      color: '#c94c4c',
+      fontSize: '3rem',
+      fontWeight: 'bold',
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+      textDecoration: 'none',
+    }
   },
 }));
 export default function () {
@@ -21,6 +30,7 @@ export default function () {
     <div className={classes.root} id="place-to-visit">
       <ImageCard place={places[1]} checked={checked} />
       <ImageCard place={places[0]} checked={checked} />
+      <div>  <a className={classes.direct} href="https://businessprofessionalsacademy.blogspot.com/p/about-business-professionals-academy.html"> Know more </a></div>
     </div>
   );
 }

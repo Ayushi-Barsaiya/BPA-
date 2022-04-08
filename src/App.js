@@ -7,7 +7,7 @@ import PlaceToVisit from './components/PlaceToVisit';
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg.jpg'})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/image.jpg'})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   },
@@ -18,7 +18,7 @@ export default function App() {
     <div className={classes.root}>
       <CssBaseline />
       <Header />
-      <PlaceToVisit />
+      <PlaceToVisit />  
     </div>
   );
 }
