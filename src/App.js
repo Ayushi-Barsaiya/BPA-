@@ -11,6 +11,15 @@ const useStyles = makeStyles((theme) => ({
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   },
+  direct:{
+    color: '#c94c4d',
+    fontSize: '3rem',
+    fontWeight: 'bold',
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    textDecoration: 'none',
+  }
 }));
 export default function App() {
   const classes = useStyles();
@@ -19,6 +28,7 @@ export default function App() {
       <CssBaseline />
       <Header />
       <PlaceToVisit />  
+      <div><a className={classes.direct} href="https://businessprofessionalsacademy.blogspot.com/p/about-business-professionals-academy.html"> Know more </a> </div>
     </div>
   );
 }
